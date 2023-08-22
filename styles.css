@@ -1,0 +1,111 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Starborn.ttf);
+}
+.kk{
+    background-color: transparent;
+}
+.img1{
+    height:55%;
+    width:45%;
+    position:absolute;
+    left:52%;
+    top:32%;
+}
+.main-heading{
+    width:25%;
+    position:absolute;
+    left:10%;
+    top:25%;
+}
+.head1{
+    letter-spacing: 5px;
+    font-family:myFirstFont;
+    color:transparent;
+    font-size:4vw;
+    -webkit-text-stroke: 0.1vw rgb(30, 211, 211);
+}
+.head1::before{
+    content:attr(data-name);
+    position:absolute;
+    top:27%;
+    left:0;
+    width:0;
+    height:100%;
+    color:rgb(52, 194, 194);
+    -webkit-text-stroke: 0.3vw rgb(74, 35, 164);
+    overflow:hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0% ,30% ,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+.para{
+    width:28%;
+    position:absolute;
+    left:10%;
+    top:40%;
+}
+.description{
+    color: rgb(6, 86, 86);
+    line-height: 1.2;
+}
+.home{
+    width:15%;
+    height:50px;
+    position:absolute;
+    left:57%;
+    top:3%;
+    text-align:center;
+    background-color:transparent ;
+    cursor:pointer;
+    font-size:10px;
+    border:solid;
+    border-radius:50%;
+    border-color:rgb(6, 86, 86);
+}
+.home-text:hover{
+    color:#F3FDE8;
+}
+.home:hover{
+    background-color:rgb(6, 86, 86) ;
+}
+.counter{
+    width:15%;
+    height:50px;
+    position:absolute;
+    top:3%;
+    left:77%;
+    text-align:center;
+    background-color:transparent ;
+    cursor:pointer;
+    font-size:10px;
+    border:solid;
+    border-radius:50%;
+    border-color:rgb(6, 86, 86);
+}
+.counter-text:hover{
+    color:#F3FDE8;
+}
+.counter:hover{
+    background-color:rgb(6, 86, 86) ;
+}
+.bubble{
+    position:absolute;
+    left:80%;
+    top:10%;
+}
+.img-text{
+    width:40%;
+    position:absolute;
+    top:18.5%;
+    left:7.54%;
+    color:rgb(6, 86, 86);
+    font-family: cursive;
+    font-size:1.2vw;
+}
